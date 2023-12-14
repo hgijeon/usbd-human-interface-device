@@ -191,7 +191,7 @@ where
         Ok(())
     }
 
-    fn get_string(&self, index: StringIndex, lang_id: u16) -> Option<&str> {
+    fn get_string(&self, index: StringIndex, lang_id: LangID) -> Option<&str> {
         self.devices.borrow_mut().get_string(index, lang_id)
     }
 
